@@ -11,7 +11,6 @@ The purpose of this course is to provide an insight into the field of Data Analy
     2. [Task 1](#task-1)
     3. [Task 2](#task-2)
 3. [Exercises](#exercises)
-4. [Parallel Programming](#parallel-programming)
 
 
 ## Lab 1
