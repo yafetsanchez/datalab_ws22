@@ -2,6 +2,7 @@
 
 The purpose of this course is to provide an insight into the field of Data Analysis with large sets of experimental data. The students will learn to use and understand basic tools and methods which are used in real searches in gravitational wave and gamma-ray astronomy, such as those currently employed at the AEI and LIGO.
 
+new line
 # Table of Contents
 
 [Resources](resources.md)
@@ -15,27 +16,27 @@ The purpose of this course is to provide an insight into the field of Data Analy
 
 ## Schedule
 
-* **18<sup>th</sup> October 2022** Introduction 
+* **18<sup>th</sup> October 2022** Introduction
 
 * **25<sup>th</sup> October 2022**: Installation of software and debugging; Sheet 1 theory: methods of signal detection
 
-* **1<sup>st</sup> November 2022** Generate data and explore noise 
+* **1<sup>st</sup> November 2022** Generate data and explore noise
 
-* **8<sup>th</sup> November 2022** Explore difference between S1, S2, S3 signal search methods. Discuss advantages and disadvantages. Aliasing 
+* **8<sup>th</sup> November 2022** Explore difference between S1, S2, S3 signal search methods. Discuss advantages and disadvantages. Aliasing
 
-* **15<sup>th</sup> November 2022** Mismatch 
+* **15<sup>th</sup> November 2022** Mismatch
 
 * **22<sup>nd</sup> November 2022** Cluster visit (Atlas admins)
 
-* **29<sup>th</sup> November 2022** ROC curve 
+* **29<sup>th</sup> November 2022** ROC curve
 
-* **6<sup>th</sup> December 2022** Template banks 
+* **6<sup>th</sup> December 2022** Template banks
 
-* **13<sup>th</sup> December 2022** Revise knowledge: Complete signal searching function 
+* **13<sup>th</sup> December 2022** Revise knowledge: Complete signal searching function
 
 _Winter holidays for students_
 
-* **10<sup>th</sup> January 2023** Sheet 4: Discuss computational cost 
+* **10<sup>th</sup> January 2023** Sheet 4: Discuss computational cost
 
 * **17<sup>th</sup> January 2023** Discuss final assignment + optional themes (parallel programming / Condor)
 
@@ -51,17 +52,17 @@ End of februrary - Assignment due
 #### Get git and a github account
 
 * Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-* [Create a github account](https://github.com/join) (if you don't have one aready) and log into it. 
+* [Create a github account](https://github.com/join) (if you don't have one aready) and log into it.
 
 #### Generate a ssh key
 
-> To make your life easier when you upload the solutions to the next exercises you should now generate on your machine a `ssh` key that will allow you to do operations on your repository without being asked for a username and password each time. 
+> To make your life easier when you upload the solutions to the next exercises you should now generate on your machine a `ssh` key that will allow you to do operations on your repository without being asked for a username and password each time.
 
 *  Generate a ssh key using the terminal/command line (Try [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) first and try to figure it out. Go through with step 7 of adding your ssh key to your github account as well! -- If all else fails [here](/instructions/ssh-key.md) is a more detailed guide)
 
 #### Get the code
 
-* Once you are logged in with your account, fork this repository by pressing the fork button on the upper right corner of this repository's page. 
+* Once you are logged in with your account, fork this repository by pressing the fork button on the upper right corner of this repository's page.
 
 ![Screenshot 2021-10-14 at 11 47 03](https://user-images.githubusercontent.com/6952640/137299631-11d5982d-b60c-4484-943e-0e0b8f22ea26.png)
 
@@ -81,7 +82,7 @@ This will automatically create a new folder called `datalab_ws22` inside the fol
 
 #### Your first commit
 
-* Create a new file in `datalab/solutions/exercise_1.py` and push your changes to your repository. 
+* Create a new file in `datalab/solutions/exercise_1.py` and push your changes to your repository.
 
 <details>
   <summary>Solution here</summary>
@@ -100,7 +101,7 @@ This will automatically create a new folder called `datalab_ws22` inside the fol
   ```
   Commit the changes and then push them:
   ```
-  $ git add . 
+  $ git add .
   $ git commit -m "Saving my changes."
   $ git log
   $ git push origin main
@@ -121,7 +122,7 @@ To get new changes that are pushed to __this__ main repository the simplest way 
   origin	git@github.com:<your_username>/datalab_ss22.git (fetch)
   origin	git@github.com:<your_username>/datalab_ss22.git (push)
   ```
-  Because you did the fork from the interface you can also get the new changes from the interface. But the better way to it is to add a _'remote'_ pointing to the fork (Add a keyname for the main repository). The textbook name for a repo you forked from is __upstream__. 
+  Because you did the fork from the interface you can also get the new changes from the interface. But the better way to it is to add a _'remote'_ pointing to the fork (Add a keyname for the main repository). The textbook name for a repo you forked from is __upstream__.
   Add a remote named _upstream_ pointing to *this* repo using: `git remote add upstream git@github.com:alebot/datalab_ss22.git`. Now when you run `git remote -v`you should see something *like* this:
   ```
   $ git remote -v
@@ -133,7 +134,7 @@ To get new changes that are pushed to __this__ main repository the simplest way 
   The best way to pull the new changes is using the `rebase` comamnd. This means that any commits you have made will be _'rebased'_ onto the new changes in the repository you have forked. (Make sure you have commited all your changes before proceeding.
   ```
   $ git status
-  $ git add . 
+  $ git add .
   $ git commit -m "Saving my changes."
   $ git log
   $ git fetch upstream
@@ -143,7 +144,7 @@ To get new changes that are pushed to __this__ main repository the simplest way 
 </details>
 
 
-### Task 1 
+### Task 1
 
 The first task will be to compile the two `C` source files. Go to your `datalab/code` folder and simply try run in your command line:
 
@@ -151,28 +152,25 @@ The first task will be to compile the two `C` source files. Go to your `datalab/
 ./Makefile
 ```
 
-I expect you might get some errors, missing libraries, missing executable. Try to solve them. 
+I expect you might get some errors, missing libraries, missing executable. Try to solve them.
 
-You can either do this in your local environment or use [docker](https://docs.docker.com/get-docker/) and run a container with c++ for example [this one](https://hub.docker.com/_/gcc). 
-  
+You can either do this in your local environment or use [docker](https://docs.docker.com/get-docker/) and run a container with c++ for example [this one](https://hub.docker.com/_/gcc).
+
 Test this is working correctly by running:
 ```
 generate_source --help
 prober --help
 ```
 
-you should get no errors and just a help message. 
-  
+you should get no errors and just a help message.
+
 ### Task 2
-  
-* Prepare your python environment. To solve the following exercises we will need preferebly [python3](https://www.python.org) installed and at least a plotting library (such as [matplotlib](https://matplotlib.org), but probably numpy, pandas etc will be useful as well. If you are using [anaconda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) make a new python environment for the datalab. 
-  
-* Have an IDE prepared, wheather it is [Jupyter](https://jupyter.org), [PyCharm](https://www.jetbrains.com/pycharm/), [Notebook++](https://notepad-plus-plus.org/downloads/), etc - the most important thing is you can easily work with it. Try to write a script that prints "Hello World!" and run it. 
-  
+
+* Prepare your python environment. To solve the following exercises we will need preferebly [python3](https://www.python.org) installed and at least a plotting library (such as [matplotlib](https://matplotlib.org), but probably numpy, pandas etc will be useful as well. If you are using [anaconda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) make a new python environment for the datalab.
+
+* Have an IDE prepared, wheather it is [Jupyter](https://jupyter.org), [PyCharm](https://www.jetbrains.com/pycharm/), [Notebook++](https://notepad-plus-plus.org/downloads/), etc - the most important thing is you can easily work with it. Try to write a script that prints "Hello World!" and run it.
+
 ## Exercises
- 
+
 We will go through the Exercise sheets and solutions together.
 The final assignment sheet and data will be in the [assignment folder](https://github.com/alebot/datalab_ws22/tree/main/assignment) in this repository. 
-
-
-
