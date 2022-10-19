@@ -6,11 +6,42 @@ The purpose of this course is to provide an insight into the field of Data Analy
 
 [Resources](resources.md)
 
+1. [Schedule](#schedule)
 1. [Setting up](#lab-1)
     1. [Prerequisites](#prerequisites)
     2. [Task 1](#task-1)
     3. [Task 2](#task-2)
 3. [Exercises](#exercises)
+
+## Schedule
+
+* **18<sup>th</sup> October 2022** Introduction 
+
+* **25<sup>th</sup> October 2022**: Installation of software and debugging; Sheet 1 theory: methods of signal detection
+
+* **1<sup>st</sup> November 2022** Generate data and explore noise 
+
+* **8<sup>th</sup> November 2022** Explore difference between S1, S2, S3 signal search methods. Discuss advantages and disadvantages. Aliasing 
+
+* **15<sup>th</sup> November 2022** Mismatch 
+
+* **22<sup>nd</sup> November 2022** Cluster visit (Atlas admins)
+
+* **29<sup>th</sup> November 2022** ROC curve 
+
+* **6<sup>th</sup> December 2022** Template banks 
+
+* **13<sup>th</sup> December 2022** Revise knowledge: Complete signal searching function 
+
+_Winter holidays for students_
+
+* **10<sup>th</sup> January 2023** Sheet 4: Discuss computational cost 
+
+* **17<sup>th</sup> January 2023** Discuss final assignment + optional themes (parallel programming / Condor)
+
+* **25<sup>th</sup> January 2023** Backup seminar
+
+End of februrary - Assignment due  
 
 
 ## Lab 1
