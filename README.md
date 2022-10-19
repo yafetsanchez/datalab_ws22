@@ -172,7 +172,7 @@ you should get no errors and just a help message.
 ## Exercises
  
 We will go through the Exercise sheets and solutions together.
-The final assignment sheet and data will be in the [assignment folder](https://github.com/alebot/datalab_ws22/tree/main/assignment) in this repo. 
+The final assignment sheet and data will be in the [assignment folder](https://github.com/alebot/datalab_ws22/tree/main/assignment) in this repository. 
 
 
 
