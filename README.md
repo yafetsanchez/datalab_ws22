@@ -1,6 +1,6 @@
 # Data Analysis Lab
 
-The purpose of this course is to provide an insight into the field of Data Analysis with large sets of experimental data. The students will learn to use and understand basic tools and methods which are used in real searches in gravitational wave and gamma-ray astronomy, such as those currently employed at AEI and LIGO.
+The purpose of this course is to provide an insight into the field of Data Analysis with large sets of experimental data. The students will learn to use and understand basic tools and methods which are used in real searches in gravitational wave and gamma-ray astronomy, such as those currently employed at the AEI and LIGO.
 
 # Table of Contents
 
@@ -35,7 +35,7 @@ The purpose of this course is to provide an insight into the field of Data Analy
 
 ![Screenshot 2021-10-14 at 11 47 03](https://user-images.githubusercontent.com/6952640/137299631-11d5982d-b60c-4484-943e-0e0b8f22ea26.png)
 
-> Now you should have __your own repository__ in your namespace called datalab_ss22 `<username>/datalab_ss22`.
+> Now you should have __your own repository__ in your namespace called datalab_ws22 `<username>/datalab_ws22`.
 
 * You should also have a ssh key added to your account to continue - if not use the _'HTTPS'_ link for the repository - you will be prompted for a username and password everytime. Copy the git url of this repository by going to your github page, the repository and clicking on _Code_>_SSH_>_copy_:
 
@@ -44,10 +44,10 @@ The purpose of this course is to provide an insight into the field of Data Analy
 * Open a command line/terminal an clone your repository. The command should look something like:
 
 ```
-git clone git@github.com:<username>/datalab_ss22.git
+git clone git@github.com:<username>/datalab_ws22.git
 ```
 
-This will automatically create a new folder called `datalab_ss22` inside the folder where you ran the command and will give you an error if such a folder exists. If you want the folder to have another name run `git clone gitithub.com:<username>/datalab_ss22.git <new_folder_name>`, e.g: `git clone gitithub.com:<username>/datalab_ss22.git datalab`. If you want to move the entire folder after you have cloned it, everything will work fine as the git references are kept in hidden files inside the folder.
+This will automatically create a new folder called `datalab_ws22` inside the folder where you ran the command and will give you an error if such a folder exists. If you want the folder to have another name run `git clone gitithub.com:<username>/datalab_ws22.git <new_folder_name>`, e.g: `git clone gitithub.com:<username>/datalab_ws22.git datalab`. If you want to move the entire folder after you have cloned it, everything will work fine as the git references are kept in hidden files inside the folder.
 
 #### Your first commit
 
@@ -142,21 +142,7 @@ you should get no errors and just a help message.
 ## Exercises
  
 We will go through the Exercise sheets and solutions together.
-The final assignment sheet and data will be in the [assignment folder](https://github.com/alebot/datalab_ss22/tree/main/assignment) in this repo. 
-    
-## Parallel Programming 
-    
-Resources:
-* [Introduction to HPC](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial##Whatis) (High Performance Computing)
-* [Introduction to MPI and OpenMP](https://princetonuniversity.github.io/PUbootcamp/sessions/parallel-programming/Intro_PP_bootcamp_2018.pdf)
-* [Programming with CUDA: parallel reduction in GPUs](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf)
-* [Patterns for Parallel Programming](https://www.researchgate.net/publication/234826291_Patterns_for_Parallel_Programming)
-* [Ian Foster Book: Designing and building parallel programms](https://www.mcs.anl.gov/~itf/dbpp/text/book.html)
-* [Ian Foster Course](https://edoras.sdsu.edu/~mthomas/docs/foster/Foster_Designing_and_Building_Parallel_Programs.pdf)
-* [Online Course](https://open.hpi.de/courses/parprog2014)
-* [Python multiprocessing Tutorial](https://www.youtube.com/watch?v=fKl2JW_qrso&t=399s)
-* [pymp library](https://github.com/classner/pymp)
-* [Condor](http://www.umiacs.umd.edu/labs/parallel/condorintro.htm)
-* [Coding Game: Have fun with MPI](https://www.codingame.com/playgrounds/47058/have-fun-with-mpi-in-c/lets-start-to-have-fun-with-mpi)
-* [Video: Introduction to parallel programming with MPI](https://www.youtube.com/watch?v=36nCgG40DJo)
-* [mpi4py](https://mpi4py.readthedocs.io/en/stable/intro.html)
+The final assignment sheet and data will be in the [assignment folder](https://github.com/alebot/datalab_ws22/tree/main/assignment) in this repo. 
+
+
+
